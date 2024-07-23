@@ -1,0 +1,10 @@
+module SongPlayer
+typeinfo app.qmltypes
+prefer :/QML_modules/SongPlayer/
+Main 1.0 customModules/Main.qml
+AudioInfoBox 1.0 customModules/AudioInfoBox.qml
+ImageButton 1.0 customModules/ImageButton.qml
+PlayListPanel 1.0 customModules/PlayListPanel.qml
+SearchField 1.0 customModules/SearchField.qml
+SearchPanel 1.0 customModules/SearchPanel.qml
+

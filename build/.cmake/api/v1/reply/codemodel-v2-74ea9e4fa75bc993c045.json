@@ -1,0 +1,168 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SongPlayer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-c9c3cdc3a6552205e792.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-585f4c7f019fb1f0632c.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-177274e78ef2cdbcb5bc.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-cb6302b224b30135739a.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app-Debug-9d64a0cad287fbef8e17.json",
+					"name" : "app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_autogen-Debug-bd6ec95114484912fe70.json",
+					"name" : "app_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_autogen_timestamp_deps-Debug-11a3128046fe85653143.json",
+					"name" : "app_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_qmlimportscan-Debug-4a4d8b66a6a21fb50bbd.json",
+					"name" : "app_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_qmllint-Debug-6a1a7b7ab67014185f1f.json",
+					"name" : "app_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_qmllint_json-Debug-4e8581629042f847ae7d.json",
+					"name" : "app_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_qmllint_module-Debug-003cf368e9deb2a85f15.json",
+					"name" : "app_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_qmltyperegistration-Debug-e2d5e23c3382c88010e3.json",
+					"name" : "app_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app_tooling-Debug-e0dd19af04d50c55f5d2.json",
+					"name" : "app_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/test/Documents/song_player/build",
+		"source" : "/Users/test/Documents/song_player"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

@@ -1,0 +1,10 @@
+--resource
+/Users/test/Documents/song_player/build/.qt/rcc/qmake_SongPlayer.qrc
+--resource
+/Users/test/Documents/song_player/build/.qt/rcc/app_raw_qml_0.qrc
+/QML_modules/SongPlayer/customModules/Main.qml
+/QML_modules/SongPlayer/customModules/AudioInfoBox.qml
+/QML_modules/SongPlayer/customModules/ImageButton.qml
+/QML_modules/SongPlayer/customModules/PlayListPanel.qml
+/QML_modules/SongPlayer/customModules/SearchField.qml
+/QML_modules/SongPlayer/customModules/SearchPanel.qml
