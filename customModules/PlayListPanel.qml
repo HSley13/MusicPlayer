@@ -1,5 +1,4 @@
 import QtQuick
-import Controller
 
 Rectangle
 {
@@ -40,7 +39,7 @@ Rectangle
         anchors.margins: 20;
 
         clip: true;
-        model: PlayerController;
+        model: playerController;
         spacing: 10;
 
         delegate: Rectangle
@@ -104,8 +103,8 @@ Rectangle
                 
                 onClicked: 
                 {
-                    PlayerController.switchToAudioByIndex(delegate.index);
-                    PlayerController.playPause();
+                    playerController.switchToAudioByIndex(delegate.index);
+                    playerController.playPause();
                 }
             }
 
@@ -120,9 +119,9 @@ Rectangle
                 width: 30;
                 height: 30;
 
-                source: "qrc:/QML_modules/SongPlayer/images/trash_icon.png";
+                source: "qrc:/QML_modules/MusicPlayer/images/trash_icon.png";
 
-                onClicked: PlayerController.removeAudio(delegate.index)
+                onClicked: playerController.removeAudio(delegate.index)
             }
         }
     }
@@ -138,7 +137,7 @@ Rectangle
         width: 32;
         height: 32;
 
-        source: "qrc:/QML_modules/SongPlayer/images/add_icon.png";
+        source: "qrc:/QML_modules/MusicPlayer/images/add_icon.png";
 
         onClicked: 
         {

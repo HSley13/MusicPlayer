@@ -1,9 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Window
-
-import Controller
-import Searcher
+import MusicPlayer
 
 Window 
 {
@@ -13,6 +11,12 @@ Window
     height: 640;
     color: "gray";
     title: qsTr("Song Player");
+
+    AudioSearchModel
+    { id: audioSearchModel}
+
+    PlayerController
+    {id: playerController}
 
     Rectangle 
     {
@@ -40,11 +44,12 @@ Window
 
             font.pixelSize: 20;
             font.bold: true;
-            
         }
 
         SearchField 
         {
+            id: searchInput;
+
             anchors.left: parent.left;
             anchors.right: closeSearchButton.left;
             anchors.verticalCenter: parent.verticalCenter;
@@ -53,11 +58,11 @@ Window
             height: 30;
 
             visible: !searchPanel.hidden;
-            enabled: !AudioSearchModel.isSearching
+            enabled: !audioSearchModel.isSearching
 
             onAccepted: (value) => 
             {
-                AudioSearchModel.searchSong(value);
+                audioSearchModel.searchSong(value);
                 topBar.forceActiveFocus();
             }
         }
@@ -73,11 +78,15 @@ Window
             width: 32;
             height: 32;
 
-            source: "qrc:/QML_modules/SongPlayer/images/menu_icon.png";
+            source: "qrc:/QML_modules/MusicPlayer/images/menu_icon.png";
 
             visible: searchPanel.hidden;
 
-            onClicked: playlistPanel.hidden = !playlistPanel.hidden;
+            onClicked:
+            {
+                playlistPanel.hidden = !playlistPanel.hidden;
+                searchInput.inputField = "";
+            } 
         }
 
         ImageButton 
@@ -91,7 +100,7 @@ Window
             width: 32;
             height: 32;
 
-            source: "qrc:/QML_modules/SongPlayer/images/close_icon.png";
+            source: "qrc:/QML_modules/MusicPlayer/images/close_icon.png";
             visible: !searchPanel.hidden;
 
             onClicked: searchPanel.hidden = true;
@@ -111,12 +120,17 @@ Window
 
         AudioInfoBox
         {
-            id: firstSong;
-
             anchors.left: parent.left;
             anchors.right: parent.right;
             anchors.verticalCenter: parent.verticalCenter;
             anchors.margins: 20;
+        }
+
+        MouseArea
+        {
+            anchors.fill: parent;
+
+            onClicked: playlistPanel.hidden = true;
         }
     }
 
@@ -136,7 +150,7 @@ Window
             anchors.centerIn: parent;
             spacing: 20;
 
-            enabled: !!PlayerController.currentSong;
+            enabled: !!playerController.currentSong;
             opacity: enabled ? 1 : 0.3;
 
             ImageButton 
@@ -147,9 +161,9 @@ Window
                 width: 30;
                 height: 30;
 
-                source: "qrc:/QML_modules/SongPlayer/images/previous_icon.png";
+                source: "qrc:/QML_modules/MusicPlayer/images/previous_icon.png";
 
-                onClicked: PlayerController.switchToPreviousSong();
+                onClicked: playerController.switchToPreviousSong();
             }
 
             ImageButton 
@@ -160,9 +174,9 @@ Window
                 width: 50;
                 height: 50;
 
-                source: PlayerController.playing ? "qrc:/QML_modules/SongPlayer/images/pause_icon.png" : "qrc:/QML_modules/SongPlayer/images/play_icon.png";
+                source: playerController.playing ? "qrc:/QML_modules/MusicPlayer/images/pause_icon.png" : "qrc:/QML_modules/MusicPlayer/images/play_icon.png";
 
-                onClicked: PlayerController.playPause();
+                onClicked: playerController.playPause();
             }
 
             ImageButton 
@@ -173,9 +187,9 @@ Window
                 width: 30;
                 height: 30;
 
-                source: "qrc:/QML_modules/SongPlayer/images/next_icon.png";
+                source: "qrc:/QML_modules/MusicPlayer/images/next_icon.png";
 
-                onClicked: PlayerController.switchToNextSong();
+                onClicked: playerController.switchToNextSong();
             }
 
         }

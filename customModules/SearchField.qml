@@ -6,6 +6,7 @@ Rectangle
     id: root;
     
     property bool hidden: true;
+    property alias inputField: searchInput.text;
 
     signal accepted(string value);
 
@@ -13,7 +14,7 @@ Rectangle
     border.color: searchInput.activeFocus ? Qt.lighter("#5F8575") : "transparent";
     border.width: 1;
 
-    opacity:  enabled ? 1: 0.6;
+    opacity:  enabled ? 1 : 0.6;
 
     TextInput
     {
@@ -37,7 +38,7 @@ Rectangle
             height: 16;
 
             mipmap: true;
-            source: "qrc:/QML_modules/SongPlayer/images/search_icon.png";
+            source: "qrc:/QML_modules/MusicPlayer/images/search_icon.png";
         }
 
         onAccepted: root.accepted(text);

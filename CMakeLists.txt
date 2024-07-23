@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.30.0)
 
-project(SongPlayer LANGUAGES CXX)
+project(MusicPlayer LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -8,9 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Quick Multimedia)
 qt_standard_project_setup()
 
-qt_add_executable(app WIN32 MACOSX_BUNDLE
-                                        main.cpp 
-                                        playerController.cpp)
+qt_add_executable(app WIN32 MACOSX_BUNDLE main.cpp)
 
 target_link_libraries(app PRIVATE 
                                 Qt6::Quick 
@@ -19,7 +17,7 @@ target_link_libraries(app PRIVATE
 qt6_policy(SET QTP0001 NEW)
 
 qt_add_qml_module(app 
-                    URI SongPlayer
+                    URI MusicPlayer
                     VERSION 1.0
 
                     RESOURCE_PREFIX "/QML_modules"
@@ -34,6 +32,7 @@ qt_add_qml_module(app
 
                     SOURCES
                     AudioInfo.cpp AudioInfo.h
+                    PlayerController.cpp PlayerController.h
                     AudioSearchModel.cpp AudioSearchModel.h
      
                     RESOURCES

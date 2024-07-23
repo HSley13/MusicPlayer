@@ -8,11 +8,13 @@
 #include <QUrlQuery>
 #include <QJsonObject>
 #include <QJsonArray>
+#include <qqml.h>
 
 #include "AudioInfo.h"
 class AudioSearchModel : public QAbstractListModel
 {
     Q_OBJECT
+    QML_ELEMENT
 
 public:
     enum Role

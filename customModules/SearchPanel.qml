@@ -1,14 +1,12 @@
 import QtQuick
-import Controller
-import Searcher
 
 Rectangle 
 {
-  id: root
+  id: root;
 
-  property bool hidden: true
+  property bool hidden: true;
 
-  color: "#333333"
+  color: "#333333";
 
   ListView 
   {
@@ -19,8 +17,8 @@ Rectangle
 
     spacing: 10;
     clip: true;
-    model: AudioSearchModel;
-    visible: !AudioSearchModel.isSearching;
+    model: audioSearchModel;
+    visible: !audioSearchModel.isSearching;
 
     delegate: Rectangle 
     {
@@ -98,7 +96,7 @@ Rectangle
         onClicked: 
         {
           root.hidden = true;
-          PlayerController.addAudio(delegate.audioName, delegate.audioAuthor, delegate.audioSource, delegate.audioImageSource);
+          playerController.addAudio(delegate.audioName, delegate.audioAuthor, delegate.audioSource, delegate.audioImageSource);
         }
       }
     }
@@ -109,9 +107,9 @@ Rectangle
     anchors.centerIn: parent;
 
     color: "gray";
-    visible: AudioSearchModel.isSearching || listView.count === 0;
+    visible: audioSearchModel.isSearching || listView.count === 0;
     
-    text: if (AudioSearchModel.isSearching) 
+    text: if (audioSearchModel.isSearching) 
             return "Searching...";
            else if (listView.count === 0) 
             return "No results";

@@ -7,11 +7,14 @@
 #include <QMediaDevices>
 #include <QAudioDevice>
 #include <QAudioOutput>
+#include <qqml.h>
+
 #include "AudioSearchModel.h"
 #include "AudioInfo.h"
 class PlayerController : public QAbstractListModel
 {
     Q_OBJECT
+    QML_ELEMENT
 
     Q_PROPERTY(bool playing READ playing NOTIFY playingChanged)
     Q_PROPERTY(AudioInfo *currentSong READ currentSong WRITE setCurrentSong NOTIFY currentSongChanged)

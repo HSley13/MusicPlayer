@@ -1,13 +1,11 @@
 import QtQuick
 import QtMultimedia
-import Controller
-import SongPlayer
 
 Item 
 {
   id: root;
 
-  visible: !!PlayerController.currentSong;
+  visible: !!playerController.currentSong;
 
   Image 
   {
@@ -19,7 +17,7 @@ Item
     width: 150;
     height: 150;
 
-    source: !!PlayerController.currentSong ? PlayerController.currentSong.imageSource : "";
+    source: !!playerController.currentSong ? playerController.currentSong.imageSource : "";
   }
 
   Video 
@@ -35,7 +33,7 @@ Item
     loops: MediaPlayer.Infinite;
     volume: 0;
 
-    source: !!PlayerController.currentSong ? PlayerController.currentSong.videoSource : "";
+    source: !!playerController.currentSong ? playerController.currentSong.videoSource : "";
 
     onSourceChanged: (source != "") ? play() : stop();
   }
@@ -52,7 +50,7 @@ Item
     color: "white";
     wrapMode: Text.WrapAtWordBoundaryOrAnywhere;
 
-    text: !!PlayerController.currentSong ? PlayerController.currentSong.title : "";
+    text: !!playerController.currentSong ? playerController.currentSong.title : "";
 
     font.pixelSize: 20;
     font.bold: true;
@@ -69,7 +67,7 @@ Item
 
     color: "gray";
     wrapMode: Text.WrapAtWordBoundaryOrAnywhere;
-    text: !!PlayerController.currentSong ? PlayerController.currentSong.authorName : "";
+    text: !!playerController.currentSong ? playerController.currentSong.authorName : "";
 
     font. pixelSize: 16;
   }

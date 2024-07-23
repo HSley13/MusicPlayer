@@ -1,4 +1,4 @@
-#include "playerController.h"
+#include "PlayerController.h"
 
 PlayerController::PlayerController(QObject *parent)
     : QAbstractListModel(parent)
