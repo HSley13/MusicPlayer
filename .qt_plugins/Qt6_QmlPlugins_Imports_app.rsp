@@ -1,0 +1,14 @@
+-rootPath
+/Users/test/Documents/song_player
+-cmake-output
+-output-file
+/Users/test/Documents/song_player/.qt_plugins/Qt6_QmlPlugins_Imports_app.cmake
+-importPath
+/Users/test/Documents/song_player/SongPlayer
+-importPath
+/Users/test/Documents/song_player
+-importPath
+/Users/test/qt-wasm/qtbase/./qml
+-qrcFiles
+/Users/test/Documents/song_player/.rcc/qmake_SongPlayer.qrc
+/Users/test/Documents/song_player/.rcc/app_raw_qml_0.qrc

@@ -1,6 +1,6 @@
 import QtQuick
 import QtMultimedia
-import com.company.PlayerController
+import Controller
 import SongPlayer
 
 Item 
@@ -54,11 +54,8 @@ Item
 
     text: !!PlayerController.currentSong ? PlayerController.currentSong.title : "";
 
-    font 
-    {
-      pixelSize: 20;
-      bold: true;
-    }
+    font.pixelSize: 20;
+    font.bold: true;
   }
 
   Text 

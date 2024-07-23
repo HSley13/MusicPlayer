@@ -1,6 +1,6 @@
 import QtQuick
-import com.company.PlayerController
-import com.company.AudioSearchModel
+import Controller
+import Searcher
 
 Rectangle 
 {
@@ -72,11 +72,8 @@ Rectangle
           minimumPixelSize: 12;
           elide: Text.ElideRight;
 
-          font 
-          {
-            pixelSize: 16;
-            bold: true;
-          }
+          font.pixelSize: 16;
+          font.bold: true;
         }
 
         Text 
@@ -113,17 +110,16 @@ Rectangle
 
     color: "gray";
     visible: AudioSearchModel.isSearching || listView.count === 0;
+    
     text: if (AudioSearchModel.isSearching) 
             return "Searching...";
            else if (listView.count === 0) 
             return "No results";
            else 
             return "";
-    font 
-    {
-      pixelSize: 24;
-      bold: true;
-    }
+
+    font.pixelSize: 24;
+    font.bold: true;
   }
 
   Behavior on y 

@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/QML_modules/SongPlayer">/Users/test/Documents/song_player/build/SongPlayer</file>
-
-  </qresource>
-</RCC>

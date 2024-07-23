@@ -1,5 +1,5 @@
 import QtQuick
-import com.company.PlayerController
+import Controller
 
 Rectangle
 {
@@ -24,11 +24,9 @@ Rectangle
 
         text: "Playlist";
         color: "white";
-        font
-        {
-            bold: true;
-            pixelSize: 20;
-        }
+
+        font.pixelSize: 20;
+        font.bold: true;
     }
 
     ListView
@@ -81,11 +79,8 @@ Rectangle
                     color: "white";
                     text: delegate.audioTitle;
 
-                    font
-                    {
-                        pixelSize: 14;
-                        bold: true;
-                    }
+                    font.pixelSize: 20;
+                    font.bold: true;
                 }
 
                 Text

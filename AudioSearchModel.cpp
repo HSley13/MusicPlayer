@@ -1,5 +1,4 @@
 #include "AudioSearchModel.h"
-
 namespace
 {
     const QString &_request_url = "https://api.jamendo.com/v3.0/tracks/";

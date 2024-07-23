@@ -2,8 +2,8 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Window
 
-import com.company.PlayerController
-import com.company.AudioSearchModel
+import Controller
+import Searcher
 
 Window 
 {
@@ -24,6 +24,24 @@ Window
         
         height: 50;
         color: "#5F8564";
+
+        Text 
+        {
+            id: titleText;
+
+            anchors.centerIn: parent;
+
+            text: "Music Player";
+
+            color: "white";
+            wrapMode: Text.WrapAtWordBoundaryOrAnywhere;
+
+            visible: !!searchPanel.hidden;
+
+            font.pixelSize: 20;
+            font.bold: true;
+            
+        }
 
         SearchField 
         {
@@ -157,7 +175,7 @@ Window
 
                 source: "qrc:/QML_modules/SongPlayer/images/next_icon.png";
 
-                onClicked: PlayerController.switchToNextSong()
+                onClicked: PlayerController.switchToNextSong();
             }
 
         }

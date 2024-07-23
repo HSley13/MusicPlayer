@@ -6,10 +6,10 @@ int main(int argc, char **argv)
     QGuiApplication app(argc, argv);
 
     PlayerController *playerController = new PlayerController(&app);
-    qmlRegisterSingletonInstance("com.company.PlayerController", 1, 0, "PlayerController", playerController);
+    qmlRegisterSingletonInstance("Controller", 1, 0, "PlayerController", playerController);
 
     AudioSearchModel *audioSearchModel = new AudioSearchModel(&app);
-    qmlRegisterSingletonInstance("com.company.AudioSearchModel", 1, 0, "AudioSearchModel", audioSearchModel);
+    qmlRegisterSingletonInstance("Searcher", 1, 0, "AudioSearchModel", audioSearchModel);
 
     QQmlApplicationEngine engine;
     engine.addImportPath(":/QML_modules/");

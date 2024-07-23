@@ -10,7 +10,6 @@
 #include <QJsonArray>
 
 #include "AudioInfo.h"
-
 class AudioSearchModel : public QAbstractListModel
 {
     Q_OBJECT

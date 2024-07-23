@@ -2,15 +2,13 @@
 
 #include <QtQuick>
 #include <QtMultimedia>
-#include "AudioSearchModel.h"
-#include "AudioInfo.h"
-
 #include <QMediaPlayer>
 #include <QAbstractListModel>
 #include <QMediaDevices>
 #include <QAudioDevice>
 #include <QAudioOutput>
-
+#include "AudioSearchModel.h"
+#include "AudioInfo.h"
 class PlayerController : public QAbstractListModel
 {
     Q_OBJECT
