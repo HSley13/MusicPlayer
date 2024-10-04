@@ -2,8 +2,7 @@
 
 #include <QObject>
 #include <QUrl>
-#include <qqml.h>
-
+#include <QtQml>
 class AudioInfo : public QObject
 {
     Q_OBJECT

@@ -66,8 +66,8 @@ Rectangle
           text: delegate.audioName;
           color: "white";
 
-          fontSizeMode: Text.Fit;
           minimumPixelSize: 12;
+          fontSizeMode: Text.Fit;
           elide: Text.ElideRight;
 
           font.pixelSize: 16;

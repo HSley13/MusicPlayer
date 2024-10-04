@@ -11,6 +11,7 @@
 
 #include "AudioSearchModel.h"
 #include "AudioInfo.h"
+
 class PlayerController : public QAbstractListModel
 {
     Q_OBJECT

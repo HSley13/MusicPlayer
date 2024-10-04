@@ -101,6 +101,7 @@ void AudioSearchModel::parseData()
                     audioInfo->setAuthorName(entry["artist_name"].toString());
                     audioInfo->setImageSource(entry["image"].toString());
                     audioInfo->setAudioSource(entry["audiodownload"].toString());
+                    qDebug() << entry["audiodownload"].toString();
 
                     _audio_list << audioInfo;
                 }
