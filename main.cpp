@@ -1,7 +1,6 @@
 #include "PlayerController.h"
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     QCoreApplication::setOrganizationName("QM_modules");
     QGuiApplication app(argc, argv);
 
@@ -9,8 +8,7 @@ int main(int argc, char **argv)
     engine.addImportPath(":/QML_modules/");
 
     const QUrl url("qrc:/QML_modules/MusicPlayer/customModules/Main.qml");
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated, &app, [url](QObject *obj, const QUrl &objUrl)
-                     { if (!obj && url == objUrl) QCoreApplication::exit(-1); }, Qt::QueuedConnection);
+    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated, &app, [url](QObject *obj, const QUrl &objUrl) { if (!obj && url == objUrl) QCoreApplication::exit(-1); }, Qt::QueuedConnection);
     engine.load(url);
 
     return app.exec();

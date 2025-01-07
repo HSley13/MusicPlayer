@@ -1,0 +1,15 @@
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app_qmltyperegistration.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/all_qmltyperegistrations.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app_qmllint.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app_qmllint_json.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app_qmllint_module.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/all_qmllint.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/all_qmllint_json.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/all_qmllint_module.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app_tooling.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app_qmlimportscan.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/edit_cache.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/rebuild_cache.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app_autogen_timestamp_deps.dir
+/Users/hsley13/Dev/music_player/Debug/CMakeFiles/app_autogen.dir

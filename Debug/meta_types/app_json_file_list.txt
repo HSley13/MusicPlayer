@@ -1,0 +1,3 @@
+/Users/hsley13/Dev/music_player/Debug/app_autogen/include/../EWIEGA46WW/moc_AudioInfo.cpp.json
+/Users/hsley13/Dev/music_player/Debug/app_autogen/include/../EWIEGA46WW/moc_AudioSearchModel.cpp.json
+/Users/hsley13/Dev/music_player/Debug/app_autogen/include/../EWIEGA46WW/moc_PlayerController.cpp.json

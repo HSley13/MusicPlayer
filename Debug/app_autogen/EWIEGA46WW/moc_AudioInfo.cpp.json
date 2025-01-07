@@ -1,0 +1,147 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "AudioInfo",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "songIndex",
+                    "notify": "songIndexChanged",
+                    "read": "songIndex",
+                    "required": true,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "write": "setSongIndex"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "title",
+                    "notify": "titleChanged",
+                    "read": "title",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setTitle"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "authorName",
+                    "notify": "authorNameChanged",
+                    "read": "authorName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setAuthorName"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "imageSource",
+                    "notify": "imageSourceChanged",
+                    "read": "imageSource",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QUrl",
+                    "user": false,
+                    "write": "setImageSource"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "videoSource",
+                    "notify": "videoSourceChanged",
+                    "read": "videoSource",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QUrl",
+                    "user": false,
+                    "write": "setVideoSource"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "audioSource",
+                    "notify": "audioSourceChanged",
+                    "read": "audioSource",
+                    "required": true,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QUrl",
+                    "user": false,
+                    "write": "setAudioSource"
+                }
+            ],
+            "qualifiedClassName": "AudioInfo",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "songIndexChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "titleChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "authorNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "imageSourceChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "videoSourceChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "audioSourceChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "AudioInfo.h",
+    "outputRevision": 68
+}
